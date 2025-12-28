@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# 1. FIG 4(a): END-TO-END LATENCY COMPARISON
+# 1. FIG 3(a): END-TO-END LATENCY COMPARISON
 def plot_latency():
     systems = ['Existing WSN (Cloud)', 'NeXNet (Edge-AI)']
     latency_values = [6.5, 0.4]  # Values from Section IV-A
@@ -22,7 +22,7 @@ def plot_latency():
     plt.savefig('fig4a_latency.png')
     plt.show()
 
-# 2. FIG 4(b): NETWORK RESILIENCE (PDR OVER TIME)
+# 2. FIG 3(b): NETWORK RESILIENCE (PDR OVER TIME)
 def plot_resilience():
     # Simulating a node failure at T=30s and recovery by T=45s
     time = np.arange(0, 101, 10) 
